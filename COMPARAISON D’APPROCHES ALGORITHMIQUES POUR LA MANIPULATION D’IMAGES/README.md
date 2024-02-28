@@ -1,4 +1,4 @@
-# Projet de Traitement d'Images en C++
+## Projet de Traitement d'Images en C++
 Ce projet C++ vise à manipuler des images au format .ppm en offrant diverses fonctionnalités de traitement. L'utilisateur peut choisir ces fonctionnalités à partir d'un menu interactif.
 
 ## Notions de Base
@@ -9,6 +9,10 @@ Ce projet C++ vise à manipuler des images au format .ppm en offrant diverses fo
 - La couleur blanche se forme lorsque degré Rouge = Vert = Bleu = 255.
 - Une couleur est plus claire lorsque la moyenne de ses composantes est proche de 255.
 - Une couleur est plus sombre lorsque la moyenne de ses composantes est proche de 0.
+
+## Guide
+Le programme principal propose un menu interactif offrant plusieurs fonctionnalités, laissant à l'utilisateur le choix des modifications à apporter en sélectionnant le numéro correspondant sur le menu.
+Le programme continue à proposer des options de modification de l'image, affichant le menu jusqu'à ce que l'utilisateur choisisse l'option stop. Une fois les modifications terminées, le programme demande à l'utilisateur de spécifier le nom du fichier .ppm dans lequel l'image modifiée sera enregistrée.
 
 ## Fonctionnalités Principales
 1. Afficher l'image, pixel par pixel.
