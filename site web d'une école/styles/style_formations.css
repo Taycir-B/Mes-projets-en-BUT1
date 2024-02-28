@@ -1,0 +1,337 @@
+@charset "utf-8";
+@font-face {
+  font-family: 'DancingScript-Regular';
+  src: url("dancing-script-ot/DancingScript-Regular.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Action_Man';
+  src: url("Action-Man/Action_Man_Bold.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+/*************CSS en commun pour toutes les pages***************/
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: linear-gradient(to bottom right, rgba(0, 0, 255, 0.5), rgba(128, 0, 128, 0.5));
+  font-family: 'Action_Man';
+}
+/********header***********/
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  border-bottom: 0.1em solid;
+  font-family: 'DancingScript-Regular';
+}
+#div_gauche_logo_menu_header {
+  width: 15%;
+  height: 15%;
+}
+#div_gauche_logo_menu_header #logo_header {
+  display: block;
+  max-width: 90%;
+  max-height: 80%;
+  border-radius: 80%;
+  padding: 1em;
+}
+#div_droite_menu_header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#div_droite_menu_header h1 {
+  margin: 2%;
+  text-shadow: 0.1em 0.1em chocolate;
+  text-decoration: underline 0.1em;
+  word-spacing: 0.25em;
+  letter-spacing: 0.01em;
+  text-align: center;
+  animation: slidein 5s linear 1;
+}
+#div_droite_menu_header #div_liste_menu_header ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+#div_droite_menu_header #div_liste_menu_header ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 3em;
+  height: 2em;
+  width: 100%;
+  padding: 1%;
+  margin: 1%;
+  box-shadow: 0.1em 0.2em chocolate;
+}
+#div_droite_menu_header #div_liste_menu_header ul li:hover {
+  background-color:rgb(230,230,250);
+  color: rgb(138,43,226);
+  opacity: 0.5;
+}
+/**animation phrase bienvenu header****/
+@keyframes slidein {
+  0% {
+    opacity: 0;
+    transform: translateX(-30%);
+  }
+  80% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+#credits_header {
+  display: flex;
+  flex-direction: column;
+  margin-left: 90%;
+  align-items: flex-start;
+  justify-content: flex-end;
+  font-size: 70%;
+}
+/****************footer*************/
+footer {
+  border-top: 0.1em black solid;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  font-family: 'DancingScript-Regular';
+}
+.div_droite_menu_footer {
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  margin: 0.5%;
+  flex-wrap: nowrap;
+  font-size: 90%;
+  justify-content: flex-start;
+}
+.div_droite_footer {
+  width: 30%;
+  margin: 0% 2%;
+}
+#droite_media {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.div_droite_footer_droite_bas_media {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+#milieu_liste ul {
+  list-style-type: none;
+  text-decoration: underline;
+}
+#logo_footer {
+  height: 100%;
+  width: 100%;
+  border-radius: 80%;
+}
+#div_gauche_logo_menu_footer {
+  width: 5%;
+  height: 4em;
+}
+/* Styles pour les icônes */
+.reseaux_sociaux {
+  border-radius: 1em;
+  width: 2em;
+  display: block;
+}
+a:visited {
+  color: rgb(0,0,0);
+}
+a:hover {
+  opacity: 0.5;
+}
+a {
+  text-decoration: none;
+  color: rgb(0,0,0);
+  font-style: oblique;
+  font-weight: bolder;
+  font-size: 1em;
+}
+section {
+  padding: 1%;
+  margin: 1% 20%;
+  border-right: 0.1em grey solid;
+  border-left: 0.1em grey solid;
+}
+section p {
+  margin: 2%;
+  padding: 1%;
+  text-indent: 3%;
+}
+h1, h2, h3, h4 {
+  margin: 2%;
+  text-decoration: underline;
+  text-shadow: 0.04em 0.03em blue;
+}
+main {
+  margin: 5%;
+  border-right: 0.1em grey solid;
+  border-left: 0.1em grey solid;
+}
+
+/*************Page Formations**************/
+/*--------------partie de section--------------*/
+
+section{
+	margin:40px;
+}
+
+section h2{
+	color:orange;
+	text-decoration : underline;
+	size:80px;
+}
+
+section h4{
+	color:orange;
+	font-size:12px;
+}
+
+section h3,p{
+	margin-left:40px;
+	display:block;
+}
+
+
+
+
+.Yusuke_paint{
+	display:flex;
+	width:40%;
+	height:auto;
+	max-width:100%;
+	max-height:100%;
+	line-height:auto;
+	vertical-align:middle;
+	margin-left:35px;
+	
+}
+
+.Yusuke{
+	display:flex;
+	width:40%;
+	height:auto;
+	max-width:100%;
+	max-height:100%;
+	line-height:auto;
+	float:right;
+	vertical-align:middle;
+	margin-right:35px;
+	
+}
+
+
+.ninjutsu{
+	display:flex
+	width:100%;
+	height:auto;
+	max-width:100%;
+	max-height:100%;
+}
+
+.image{	
+	display:inline-block;
+	size:200%;
+	}
+
+.education{
+	vertical-align:middle;
+	display:flex;
+	}
+
+/*************Page Formations**************/
+/*--------------partie de section--------------*/
+
+
+
+
+
+
+
+.Yusuke_paint{
+	display:flex;
+	width:40%;
+	height:auto;
+	max-width:100%;
+	max-height:100%;
+	line-height:auto;
+	vertical-align:middle;
+	margin-left:35px;
+	
+}
+
+.Yusuke{
+	display:flex;
+	width:50%;
+	height:60%;
+	max-width:100%;
+	max-height:100%;
+	line-height:auto;
+	float:right;
+	vertical-align:middle;
+	margin-right:20px;
+	
+}
+
+
+.ninjutsu{
+	display:flex
+	width:100%;
+	height:auto;
+	max-width:100%;
+	max-height:100%;
+	margin-right:10px;
+	text-align:center;
+}
+
+.image{	
+	display:inline-block;
+	size:200%;
+	}
+
+.education{
+	vertical-align:middle;
+	display:flex;
+	}
+	
+.la_fee_image{
+	width:300px;
+	height:300px;
+	justify-content:center;
+	align-items:center;
+	text-align:center;
+	margin-left:23%;
+}
+.La_fee{
+	max-width:100%;
+	max-height:100%;
+}
+
+
+.Angela_image{
+	width:300px;
+	height:300px;
+	justify-content:center;
+	align-items:center;
+	text-align:center;
+	margin-left:23%;
+}
+.Angela{
+	max-width:100%;
+	max-height:100%;
+}

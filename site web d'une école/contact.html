@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+      <meta charset="UTF-8">
+      <title>Nous Contacter - SUPER POUVOIR</title>
+      <link rel="stylesheet" href="contact_fichiers/style.css">
+      <link rel="icon" href="https://webdev.iut-orsay.fr/images/menu/logo.png" type="image/png">
+   </head>
+   <body>
+      <header>
+         <div id="div_gauche_logo_menu_header"><a href="https://webdev.iut-orsay.fr/~tbenoui/accueil.html"> <img id="logo_header" src="contact_fichiers/logo.png" alt="Logo de SUPER POUVOIR"></a> </div>
+         <div id="div_droite_menu_header">
+            <div>
+               <h1>Bienvenue à SUPER POUVOIR</h1>
+               <ul id="credits_header">
+                  <li class="highlight_text">Ben Ouirane Taycir</li>
+                  <li class="highlight_text">Hayue HU</li>
+               </ul>
+            </div>
+            <div id="div_liste_menu_header">
+               <ul>
+                  <li><a href="https://webdev.iut-orsay.fr/~tbenoui/accueil.html">Accueil</a></li>
+                  <li><a href="https://webdev.iut-orsay.fr/~tbenoui/formations.html">Formations</a></li>
+                  <li><a href="https://webdev.iut-orsay.fr/~tbenoui/relations-internationales.html">Relations Internationales</a></li>
+                  <li><a href="#">Contact</a></li>
+               </ul>
+            </div>
+         </div>
+      </header>
+      <main>
+         <section>
+            <h2>Comment nous Contacter? </h2>
+            <div id="div_affiche_contat">
+               <img src="contact_fichiers/Contactez-nous.jpeg" alt="Super Pouvoir">
+            </div>
+            <div>
+               <p> Pour toute demande d'information ou pour entrer en 
+contact avec notre équipe, plusieurs moyens sont à votre disposition. 
+Vous pouvez nous joindre via notre adresse e-mail principale, <span class="highlight_text"> contact@superpouvoir.edu </span> ou bien via le
+                  <label for="formation"> <span class="highlight_text"> formulaire de contact </span> </label>
+                  où notre équipe dédiée se fera un plaisir de répondre à vos questions dans les plus brefs délais. 
+               </p>
+               <p> De plus, pour une assistance immédiate ou pour 
+discuter directement avec notre équipe, nous sommes disponibles par 
+téléphone au <span class="highlight_text"> +33 1 23 45 67 89 </span> pendant nos heures d'ouverture habituelles <span class="highlight_text"> du lundi au vendredi, de 9h à 17h</span>. </p>
+               <p> Si vous préférez nous rendre visite, notre école est située au <span class="highlight_text"> 24 Rue Pavée, 75004 Paris. </span> </p>
+               <p> Vous pouvez également utiliser le formulaire 
+ci-dessous pour nous envoyer un message directement depuis notre site. 
+Nous nous engageons à vous offrir un service de qualité et à vous 
+assister au mieux pour répondre à vos besoins. </p>
+            </div>
+            <div>
+               <span id="highlight_titre_text">Voici tous nos cordonnées Contact</span>
+               <ul class="decale_liste_type">
+                  <li> <span class="highlight_text"> Numéro de Téléphone : </span> +33 1 23 45 67 89 </li>
+                  <li> <span class="highlight_text"> Adresse e-mail : </span> contact@superpouvoir.edu </li>
+                  <li> <span class="highlight_text"> formulaire de contact : </span>
+                     <label for="formation">cliquer ici</label>
+                  </li>
+                  <li>
+                     <span class="highlight_text"> Adresse : 24 Rue Pavée, 75004 Paris</span>
+                     <ul class="decale_liste_type" id="horaire_recap">
+                        <li> Lundi - Vendredi: 9h00 - 17h00 </li>
+                        <li> Samedi - Dimanche: Fermé </li>
+                     </ul>
+                  </li>
+               </ul>
+               <div id="div_maps">
+                  <iframe id="map" src="contact_fichiers/embed.htm" allowfullscreen="" loading="lazy"> </iframe>
+               </div>
+            </div>
+         </section>
+         <section>
+            <h3>Contactez nous via un formulaire interactif</h3>
+            <form action="donnes.php" method="GET">
+               <label for="formation">Formation Intéressante : </label>
+               <select id="formation" name="formation">
+                  <option value="naruto" selected="selected"> Naruto </option>
+                  <option value="tostues-ninja"> Les Tostues Ninja </option>
+               </select>
+               <label for="nom">Nom :</label>
+               <input type="text" id="nom" name="nom" placeholder="Entrez votre nom">
+               <label for="email">Adresse E-mail :</label>
+               <input type="email" id="email" name="email" placeholder="Entrez votre adresse e-mail">
+               <label for="message">Message :</label>
+               <textarea id="message" name="message" placeholder="ecrivez votre message personnalisé ici (ne dépasse pas 300 caratères)" maxlength="300"></textarea>
+               <label for="motivation"> Êtes-vous motivé(e) pour rejoindre notre école ? </label>
+               <input type="range" id="motivation" name="motivation" value="10" min="0" max="100" step="1">
+               <button type="submit">Envoyer</button>
+               <button type="reset"> Annuler </button>
+            </form>
+         </section>
+      </main>
+      <footer>
+         <div id="div_gauche_logo_menu_footer">
+              <img id="logo_footer" src="contact_fichiers/logo.png" alt="Logo de SUPER POUVOIR">
+         </div>
+         <div class="div_droite_menu_footer">
+            <div class="div_droite_footer">
+               <p> 24 Rue Pavée, 75004 Paris </p>
+               <p>contact@superpouvoir.edu</p>
+               <p> Tel:  +33 1 23 45 67 89 </p>
+            </div>
+            <div class="div_droite_footer" id="milieu_liste">
+               <ul>
+                  <li> <a href="https://webdev.iut-orsay.fr/~tbenoui/accueil.html">Accueil </a> </li>
+                  <li> <a href="https://webdev.iut-orsay.fr/~tbenoui/formations.html"> Formations </a> </li>
+                  <li> <a href="https://webdev.iut-orsay.fr/~tbenoui/relations-internationales.html"> Relations Internationale </a> </li>
+                  <li> <a href="https://webdev.iut-orsay.fr/~tbenoui/contact.html">Contact </a> </li>
+				  <li> <a href="https://webdev.iut-orsay.fr/~tbenoui/rapport/Rapport%20Projet%20Web.pdf">Rappord.pdf</a> </li>
+               </ul>
+            </div>
+            <div class="div_droite_footer">
+               <p>Créatrices du site: </p>
+               <ul class="decale_liste_type">
+                  <li>Ben Ouirane Taycir</li>
+                  <li>Hayue HU</li>
+               </ul>
+            </div>
+            <div class="div_droite_footer_" id="droite_media">
+               <a href="https://webdev.iut-orsay.fr/~tbenoui/facebook.com"><img class="reseaux_sociaux" src="contact_fichiers/fb_img.png" alt="page facebook"></a>
+               <a href="https://webdev.iut-orsay.fr/~tbenoui/instagram.com"><img class="reseaux_sociaux" src="contact_fichiers/insta_img.jpeg" alt="page insta"></a>
+               <a href="https://webdev.iut-orsay.fr/~tbenoui/twitter.com"><img class="reseaux_sociaux" src="contact_fichiers/twitt_img.jpeg" alt="page twitter"></a> 
+            </div>
+         </div>
+      </footer>
+   
+</body></html>
