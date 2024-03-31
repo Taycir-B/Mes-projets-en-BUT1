@@ -1,383 +1,231 @@
-@charset "utf-8";
-@font-face {
-  font-family: 'DancingScript-Regular';
-  src: url("../font-face/Action-Man/Action_Man.ttf");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Action_Man';
-  src: url("../font-face/Action-Man/Action_Man_Bold.ttf");
-  font-weight: normal;
-  font-style: normal;
-}
-/*************CSS en commun pour toutes les pages***************/
+/* Reset des styles par défaut */
 * {
-  margin: 0;
-  padding: 0;
-}
-body {
-  background: linear-gradient(to bottom right, rgba(0, 0, 255, 0.5), rgba(128, 0, 128, 0.5));
-  font-family: 'Action_Man';
-}
-/********header***********/
-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  border-bottom: 0.1em solid;
-  font-family: 'DancingScript-Regular';
-}
-#div_gauche_logo_menu_header {
-  width: 15%;
-  height: 15%;
-}
-#div_gauche_logo_menu_header #logo_header {
-  display: block;
-  max-width: 90%;
-  max-height: 80%;
-  border-radius: 80%;
-  padding: 1em;
-}
-#div_droite_menu_header {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-#div_droite_menu_header h1 {
-  margin: 2%;
-  text-shadow: 0.1em 0.1em chocolate;
-  text-decoration: underline 0.1em;
-  word-spacing: 0.25em;
-  letter-spacing: 0.01em;
-  text-align: center;
-  animation: slidein 5s linear 1;
-}
-#div_droite_menu_header #div_liste_menu_header ul {
-  list-style-type: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-#div_droite_menu_header #div_liste_menu_header ul li {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid black;
-  border-radius: 3em;
-  height: 2em;
-  width: 100%;
-  padding: 1%;
-  margin: 1%;
-  box-shadow: 0.1em 0.2em chocolate;
-}
-#div_droite_menu_header #div_liste_menu_header ul li:hover {
-  background-color:rgb(230,230,250);
-  color: rgb(138,43,226);
-  opacity: 0.5;
-}
-/**animation phrase bienvenu header****/
-@keyframes slidein {
-  0% {
-    opacity: 0;
-    transform: translateX(-30%);
-  }
-  80% {
-    opacity: 1;
-    transform: translateX(0%);
-  }
-}
-#credits_header {
-  display: flex;
-  flex-direction: column;
-  margin-left: 90%;
-  align-items: flex-start;
-  justify-content: flex-end;
-  font-size: 70%;
-}
-/****************footer*************/
-footer {
-  border-top: 0.1em black solid;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  font-family: 'DancingScript-Regular';
-}
-.div_droite_menu_footer {
-  width: 95%;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  margin: 0.5%;
-  flex-wrap: nowrap;
-  font-size: 90%;
-  justify-content: flex-start;
-}
-.div_droite_footer {
-  width: 30%;
-  margin: 0% 2%;
-}
-#droite_media {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  justify-content: flex-end;
-}
-.div_droite_footer_droite_bas_media {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-#milieu_liste ul {
-  list-style-type: none;
-  text-decoration: underline;
-}
-#logo_footer {
-  height: 100%;
-  width: 100%;
-  border-radius: 80%;
-}
-#div_gauche_logo_menu_footer {
-  width: 5%;
-  height: 4em;
-}
-/* Styles pour les icônes */
-.reseaux_sociaux {
-  border-radius: 1em;
-  width: 2em;
-  display: block;
-}
-/*******autre mise en forme****/
-a:visited {
-  color: rgb(0,0,0);
-}
-a:hover {
-  opacity: 0.5;
-}
-a {
-  text-decoration: none;
-  color: rgb(0,0,0);
-  font-style: oblique;
-  font-weight: bolder;
-  font-size: 1em;
-}
-section {
-  padding: 1%;
-  margin: 1% 20%;
-  border-right: 0.1em grey solid;
-  border-left: 0.1em grey solid;
-}
-section p {
-  margin: 2%;
-  padding: 1%;
-  text-indent: 3%;
-}
-h1, h2, h3, h4 {
-  margin: 2%;
-  text-decoration: underline;
-  text-shadow: 0.04em 0.03em blue;
-}
-main {
-  margin: 5%;
-  border-right: 0.1em grey solid;
-  border-left: 0.1em grey solid;
-}
-#highlight_titre_text {
-  font-style: oblique;
-  font-weight: bolder;
-  font-size: 1.2em;
-  color: #090000;
-  display: block;
-  text-indent: 3%;
-  margin: 0.3%;
-  padding: 1%;
-}
-.highlight_text {
-  color: rgb(0,0,139);
-  font-weight: bolder;
-}
-/************page contact*************/
-#div_affiche_contat img {
-  width: 80%;
-  margin: 2% 2%;
-  border-radius: 1%;
-  box-shadow: 0.1em 0.2em 1em 0.5em grey;
-}
-#div_affiche_contat {
-  margin-left: 5%;
-}
-iframe {
-  width: 100%;
-  height: 40em;
-  border: none;
-  display: block;
-}
-.decale_liste_type {
-  margin-left: 10%;
-}
-#horaire_recap {
-  list-style-type: circle;
-  margin-bottom: 5%;
-}
-#map {
-  height: 20em;
-  max-width: 100%;
-  margin-top: 20em;
-  margin: 0;
-  padding: 0;
-  border-radius: 0.3em;
-}
-/*formulaire-Contact.html***/
-form {
-  display: flex;
-  flex-direction: column;
-  margin: 5% 10%;
-}
-form label {
-  margin-top: 5%;
-  margin-bottom: 1%;
-  text-indent: 2%;
-  font-style: oblique;
-  font-weight: bold;
-  font-size: 90%;
-  color: rgb(0,0,139);
-}
-input[type="text"], input[type="email"], input[type="range"], select {
-  height: 3em;
-  border-radius: 1em;
-  text-align: center;
-  padding: 1%;
-  border: 0.1em black solid;
-}
-textarea {
-  border-radius: 1em;
-  text-align: center;
-  padding: 1em;
-  height: 4em;
-  border: 0.1em black solid;
-}
-button {
-  height: 2em;
-  width: 50%;
-  border-radius: 1em;
-  margin: 2% 25%;
-  border: 0.1em black solid;
-  font-weight: bolder;
-}
-/********************Page accueil*****************************/
-#solgan {
-  color: rgb(255, 127, 80);
-  font-size: 1.5em;
-  margin: 3%;
-  text-shadow: 0.02em 0.08em black;
-}
-#video {
-  overflow: hidden;
-}
-#images_residence {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 80%;
-  height: 15em;
-  padding: 4%;
-  margin: 0;
-}
-#images_residence img {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-#div_droite_img {
-  flex-direction: column;
-}
-#div_droite_bas_img {
-  height: 50%;
-}
-#div_droite_haut_img {
-  height: 50%;
-}
-/*image en arriere plan-dernier div (residence)- Page accueil*/
-#residence {
-  background-image: url('../images/img_fond_residance_page-accueil.jpeg');
-  padding: 20px;
-  background-repeat: no-repeat;
-  opacity: 0.9;
-  background-size: cover;
-}
-/********************************Page Relations internationales***********/
-table {
-  width: 60%;
-  border-collapse: collapse;
-  margin-left: 10%;
-  padding: 2%;
-}
-th, td {
-  padding: 0.8em;
-  text-align: left;
-  border-bottom: 0.1em solid #ddd;
-}
-th {
-  background-color: #f2f2f2;
-}
-#nos_etudiants {
-  height: 20em;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-.etudiant {
-  width: 30%;
-  height: 100%;
-  border: 2px black solid;
-  margin: 0 2%;
-  border-radius: 1%;
-  box-shadow: 0.1em 0.2em 1em 0.5em grey;
-}
-#etudiant1 {
-  background-image: url('../images/STUDENT1-.jpg');
-  background-size: cover;
-}
-#etudiant2 {
-  background-image: url('../images/STUDENT2-.jpg');
-  background-size: cover;
-}
-#etudiant3 {
-  background-image: url('../images/STUDENT3-.jpg');
-  background-size: cover;
-}
-#etudiant3:hover {
-  opacity: 0.5;
-}
-.info {
-  display: block;
-  color: transparent;
-  opacity: 0.5;
-}
-.info:hover {
-  display: block;
-  height: 90%;
-  width: 80%;
-  padding: 10% 10%;
-  background-color: rgb(255,255,255);
-  opacity: 0.5;
-  font-size: 90%;
-  font-weight: bold;
-  color: rgb(255,0,0);
-  text-align: center;
-}
-#imgIntenational {
-  margin-top: 5%;
-  height: 30%;
-  width: 100%;
-}
-#imgIntenational img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  border-radius: 1%;
-  box-shadow: 0.1em 0.2em 1em 0.5em grey;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+/* Police de caractères */
+body {
+    font-family: 'Roboto', sans-serif; /* police Google Fonts */
+}
+.education-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.education-details {
+    width: 60%;
+}
+
+.school-logo {
+    width: 30%;
+    text-align: center;
+    
+}
+
+.rounded img {
+    border-radius: 50%;
+    margin-top: 20%;
+}
+.education img{
+    text-align: center;
+    margin-top: 40%;
+    max-width: 100%;
+}
+header {
+    background-color: #333; /* Couleur de fond */
+    color: #fff; /* Couleur du texte */
+    padding-top: 20px;
+    text-align: center;
+}
+header h1{
+    margin:1% 0;
+    text-align: left;
+    padding-left: 5%;
+    
+}
+/* Navigation */
+nav {
+    background-color: #444;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+main {
+    padding: 5%;
+}
+
+h2 {
+    color: #333;
+    margin: 1% 0;
+}
+h3{
+    margin: 1%;
+}
+.job div p{
+    margin: 1%;
+}
+.job div ul li, .education li, .skills li{
+    margin: 0.9%;
+    list-style-type:disclosure-closed; 
+}
+p {
+    color: #555;
+    style;line-height: 1.5;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 1%;
+}
+
+/* Style spécifique pour la section "À propos de moi" */
+
+.intro, .experience, .job, .education, .project, .skills {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+.skills ul li li{
+    list-style-type: none;
+    
+}
+.intro p, .experience p, .project p{
+    padding: 0.1%;
+    margin-bottom: 20px;
+}
+/* Style spécifique pour la section "Compétences" */
+
+.skills {
+    margin-bottom: 20px;
+}
+
+.skills h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.skills ul {
+    padding-left: 20px;
+}
+
+.skills ul li {
+    margin-bottom: 10px;
+}
+
+.skills ul li strong {
+    color: #333;
+}
+
+.skills ul li ul {
+    margin-top: 5px;
+}
+.skills img{
+    max-width: 100%;
+    margin: 3% 0;
+    width:100%;
+}
+/* Style spécifique pour la section "Contact" */
+
+.contact {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.contact h2 {
+    margin-bottom: 10px;
+}
+
+.contact ul {
+    padding-left: 0;
+}
+
+.contact li {
+    margin-bottom: 10px;
+}
+
+.contact a {
+    color: #ffd700;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact a:hover {
+    color: #fff;
+}
+
+/* Pied de page */
+footer {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+.job {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.job-image {
+    flex-basis: 30%;
+}
+
+.job-image img {
+    max-width: 100%;
+    width: 90%;
+    border-radius: 50%;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+footer ul li:last-child {
+    margin-right: 0;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+footer ul li a:hover {
+    color: #ffd700; /* Changement de couleur au survol */
+}
+/* Style pour les liens dans le menu lorsqu'ils sont survolés */
+nav ul li a:hover {
+    color: #ffd700; /* Couleur du texte au survol */
+    text-decoration: underline; /* Soulignement au survol */
+}
