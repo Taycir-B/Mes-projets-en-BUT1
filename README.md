@@ -3,7 +3,7 @@ Ce dépôt contient les projets que j'ai réalisés au cours de ma première ann
 
 ## Liste des Projets
  * ### [Camparaison d’approches algorithmiques pour la manipulation d’images](https://github.com/Taycir-B/Mes-projets-en-BUT1/tree/main/COMPARAISON%20D%E2%80%99APPROCHES%20ALGORITHMIQUES%20POUR%20LA%20MANIPULATION%20D%E2%80%99IMAGES) (C++)
- * ### [Création d’une base de données](https://github.com/Taycir-B/Mes-projets-en-BUT1/tree/main/Creation%20d'une%20Base%20de%20donn%C3%A9e-%20Cabinet%20du%20Groupe) (SQL)
+ * ### [Création d’une base de données](https://github.com/Taycir-B/Mes-projets-en-BUT1/tree/main/Creation%20d'une%20Base%20de%20donn%C3%A9e-%20Cabinet%20du%20Groupe) (Oracle SQL, MySQL)
  * ### [Recueil de besoins](https://github.com/Taycir-B/Mes-projets-en-BUT1/tree/main/Recueil%20de%20besoin) (Gestion des projets)
  * ### [Installation d’un poste de développement](https://github.com/Taycir-B/Mes-projets-en-BUT1/blob/main/INSTALLATION%20D%E2%80%99UN%20POSTE%20DE%20DEVELOPPEMENT.pdf) (Linux, MariaDB, SQL)
  * ### [site web d'une école](https://github.com/Taycir-B/Mes-projets-en-BUT1/tree/main/site%20web%20d'une%20%C3%A9cole) (HTML, CSS)
