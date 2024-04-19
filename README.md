@@ -8,6 +8,7 @@ Ce dépôt contient les projets que j'ai réalisés au cours de ma première ann
  * ### [Installation d’un poste de développement](https://github.com/Taycir-B/Mes-projets-en-BUT1/blob/main/INSTALLATION%20D%E2%80%99UN%20POSTE%20DE%20DEVELOPPEMENT.pdf) (Linux, MariaDB, SQL)
  * ### [site web d'une école](https://github.com/Taycir-B/Mes-projets-en-BUT1/tree/main/site%20web%20d'une%20%C3%A9cole) (HTML, CSS)
  * ### [Conception de processeurs bas niveau avec MAG](https://github.com/Taycir-B/Mes-projets-en-BUT1/tree/3863737ad1c17b2b3bbc4b1da4c3ef1502158548/Conception%20de%20processeurs%20bas%20niveau%20avec%20MAG)(programmation bas niveau, Architecture informatique, MAG)
+ * ### [Jeu Deviner Mot](https://github.com/Taycir-B/Mes-projets-en-BUT1/tree/8ed748ab8a836f36fce4877940e19fe4d846cbbc/JeuDevinerMot_C%23_XAML_WPF) (C#, XAML, WPF)
 
 ## Comment Utiliser
 Chaque projet est organisé dans son propre répertoire avec des instructions spécifiques sur la manière de le compiler, de l'exécuter ou de l'utiliser.
