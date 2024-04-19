@@ -25,5 +25,6 @@ Voici la table fonctionnelle des opérations pour l’objet **proposition** :
 Voici la table fonctionnelle des opérations pour l’objet **partie** : 
 
 <img src="./img/tableOperations-Partie.jpg" width="60%"/>
+
 ## Auteur
 Ce projet a été réalisé par Taycir Ben Ouirane.
